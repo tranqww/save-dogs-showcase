@@ -7,7 +7,9 @@
 > Это репозиторий-шоукейс: видео, скриншоты и описание. Код проекта — в
 > отдельном приватном репозитории.
 
-🎬 [Видео-прогон по всем секциям](media/scroll-through.mp4) (`media/scroll-through.mp4`)
+![Прогон по всем секциям лендинга](media/preview.gif)
+
+🎬 Полное видео в 60fps: [`media/scroll-through.mp4`](media/scroll-through.mp4)
 
 ## Концепция
 
