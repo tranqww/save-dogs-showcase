@@ -1,33 +1,34 @@
-# Дом
+# Home
 
-Имиджевый скролл-лендинг о брошенных собаках. Показ, а не давление фактами:
-даже бездомные собаки способны заботиться о слабом — так почему забота
-иногда пропадает у тех, у кого есть дом?
+Image film / awareness scroll landing about abandoned dogs. Show, don't
+pressure with facts: even homeless dogs are capable of caring for the weak —
+so why does that care sometimes go missing in those who have a home?
 
-> Это репозиторий-шоукейс: видео, скриншоты и описание. Код проекта — в
-> отдельном приватном репозитории.
+> This is the showcase repo: video, screenshots, and description. The
+> project's code lives in a separate private repository.
 
-![Прогон по всем секциям лендинга](media/preview.gif)
+![Full scroll-through of every section](media/preview.gif)
 
-🎬 Полное видео в 60fps: [`media/scroll-through.mp4`](media/scroll-through.mp4)
+🎬 Full 60fps video: [`media/scroll-through.mp4`](media/scroll-through.mp4)
 
-## Концепция
+## Concept
 
-Скролл — путешествие от холода к теплу. Первая сцена: одинокая собака под
-дождём, графитовые и стальные тона, лёгкий шум/зерно — асфальт под дождём.
-По мере прокрутки палитра, свет и сцена «протапливаются» до тёплого дома —
-и на смену приходит вторая модель: две собаки бережно охраняют птенца.
+The scroll is a journey from cold to warm. First scene: a lone dog in the
+rain, graphite and steel tones, a light grain/noise — asphalt in the rain.
+As you scroll, the palette, light, and scene "warm up" into a home — and a
+second model takes over: two dogs gently watching over a chick.
 
-Мысль-стержень:
+Core idea:
 
-> Если забота есть даже у тех, у кого нет дома — почему её иногда нет у тех,
-> у кого дом есть?
+> If even those without a home are capable of care — why is it sometimes
+> missing in those who have one?
 
-Структура — 8 секций: hero → факт → точка перелома (пин, цвет фона
-перетекает) → сцена заботы (пин, интерактивная 3D-модель с drag-to-rotate) →
-вопрос → практический блок (что можно сделать) → финальный призыв → футер.
+Structure — 8 sections: hero → fact → turning point (pinned, background
+color bleeds through) → care scene (pinned, interactive 3D model with
+drag-to-rotate) → question → practical block (what you can do) → final call
+to action → footer.
 
-## Скриншоты
+## Screenshots
 
 | | |
 |---|---|
@@ -37,19 +38,20 @@
 
 ![cta](media/07-cta.png)
 
-## Стек
+## Stack
 
 - **Next.js 16** (App Router, TypeScript, Turbopack)
-- **React Three Fiber** + **drei** — рендер и загрузка 3D-моделей (`.glb`, Sketchfab)
-- **GSAP** (`ScrollTrigger`, `SplitText`) — синхронизация камеры, света и текста со скроллом
-- **Tailwind CSS v4** — база стилей поверх собственной дизайн-системы (CSS-переменные)
-- Модели сжаты через `@gltf-transform/cli` (meshopt-геометрия + WebP-текстуры):
-  один файл ужат с 19.9MB до 1.0MB без потери в 3D-вьюпорте
+- **React Three Fiber** + **drei** — rendering and loading 3D models (`.glb`, Sketchfab)
+- **GSAP** (`ScrollTrigger`, `SplitText`) — syncing camera, light, and text to scroll
+- **Tailwind CSS v4** — base styles on top of a custom design system (CSS variables)
+- Models compressed via `@gltf-transform/cli` (meshopt geometry + WebP textures):
+  one file shrunk from 19.9MB to 1.0MB with no visible loss in the 3D viewport
 
-Одна персистентная WebGL-сцена на весь сайт — камера, свет, кроссфейд между
-двумя моделями и частицы (дождь → тёплая пыль) ведутся общим «диспетчером»,
-который каждый кадр читает прогресс скролла текущей секции.
+One persistent WebGL scene runs the whole site — camera, light, the crossfade
+between the two models, and particles (rain → warm dust) are all driven by a
+single "director" that reads the current section's scroll progress every
+frame.
 
-## Ссылки
+## Links
 
-- Код: [tranqww/save-dogs-landing](https://github.com/tranqww/save-dogs-landing) (приватный репозиторий)
+- Code: [tranqww/save-dogs-landing](https://github.com/tranqww/save-dogs-landing) (private repository)
