@@ -11,8 +11,6 @@ so why does that care sometimes go missing in those who have a home?
 
 ![Full scroll-through of every section](media/preview.gif)
 
-🎬 Full video: [`media/scroll-through.mp4`](media/scroll-through.mp4)
-
 ## Concept
 
 The scroll is a journey from cold to warm. First scene: a lone dog in the
