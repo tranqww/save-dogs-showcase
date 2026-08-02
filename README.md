@@ -7,6 +7,8 @@ so why does that care sometimes go missing in those who have a home?
 > This is the showcase repo: video, screenshots, and description. The
 > project's code lives in a separate private repository.
 
+🔗 **Live page:** https://tranqww.github.io/save-dogs-showcase/
+
 ![Full scroll-through of every section](media/preview.gif)
 
 🎬 Full video: [`media/scroll-through.mp4`](media/scroll-through.mp4)
@@ -54,4 +56,5 @@ frame.
 
 ## Links
 
+- Live page: [tranqww.github.io/save-dogs-showcase](https://tranqww.github.io/save-dogs-showcase/)
 - Code: [tranqww/save-dogs-landing](https://github.com/tranqww/save-dogs-landing) (private repository)
