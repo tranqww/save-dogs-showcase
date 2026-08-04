@@ -4,10 +4,13 @@ Image film / awareness scroll landing about abandoned dogs. Show, don't
 pressure with facts: even homeless dogs are capable of caring for the weak —
 so why does that care sometimes go missing in those who have a home?
 
-> This is the showcase repo: video, screenshots, and description. The
-> project's code lives in a separate private repository.
+> This is the showcase repo. The live site below is the actual project —
+> scroll it yourself. `/source` has a read-only snapshot of the code;
+> the private repo (linked below) is where active development happens.
 
-🔗 **Live page:** https://tranqww.github.io/save-dogs-showcase/
+🔗 **Live, scrollable site:** https://tranqww.github.io/save-dogs-showcase/
+
+Don't want to load the 3D scene? Here's a GIF instead:
 
 ![Full scroll-through of every section](media/preview.gif)
 
@@ -52,7 +55,17 @@ between the two models, and particles (rain → warm dust) are all driven by a
 single "director" that reads the current section's scroll progress every
 frame.
 
+## Repo layout
+
+```
+/            the live site itself — a static export of the Next.js app,
+             served directly by GitHub Pages (see /source for how it's built)
+/source/     read-only snapshot of the app's source at the time of this
+             deploy — not kept continuously in sync with the private repo
+/media/      screenshots, GIF preview, and the fallback video
+```
+
 ## Links
 
 - Live page: [tranqww.github.io/save-dogs-showcase](https://tranqww.github.io/save-dogs-showcase/)
-- Code: [tranqww/save-dogs-landing](https://github.com/tranqww/save-dogs-landing) (private repository)
+- Code (actively developed): [tranqww/save-dogs-landing](https://github.com/tranqww/save-dogs-landing) (private repository)
